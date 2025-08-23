@@ -6,7 +6,7 @@ import XIcon from "@/icons/XIcon";
 function Navbar() {
   return (
     <header>
-      <div className="flex justify-between items-center mx-5 sm:px-15 md:mx-24 lg:mx-32 bg-[#f6f6f6] mt-4 py-5 px-8 rounded-full">
+      <div className="flex justify-between items-center bg-[#f6f6f6] mt-4 py-5 px-8 rounded-full">
         <div>
           <span className="text-xl font-semibold">BtnUi</span>
         </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="flex flex-col text-center items-center mx-5 sm:px-15 md:mx-24 lg:mx-32 bg-[#f6f6f6] mt-4 py-15 px-8 rounded-2xl gap-10">
+    <div className="flex flex-col text-center items-center bg-[#f6f6f6] mt-4 py-15 px-8 rounded-2xl gap-10">
       {/* Logo Image */}
       <div>
         <Image
