@@ -1,5 +1,7 @@
-import button1 from "./button1";
+import Button1 from "./button1";
+import Button2 from "./button2";
 
 export const Btn = {
-  button1,
+  Button1,
+  Button2,
 };

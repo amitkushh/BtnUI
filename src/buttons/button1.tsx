@@ -1,9 +1,9 @@
-function button1() {
+function Button1() {
   return (
-    <button className="inline-flex h-12 items-center justify-center rounded-md bg-neutral-950 px-6 font-medium text-neutral-50 transition active:scale-110 ">
-      Click me
+    <button className="font-semibold text-sm py-3 px-8 text-white rounded-md cursor-pointer shadow-lg shadow-black/50 inset-shadow-sm inset-shadow-[#85868b] bg-gradient-to-t from-[#444546] to-[#232526] transition-colors duration-500 ease-in-out hover:bg-gradient-to-t hover:from-[#232526] hover:to-[#232526]">
+      Get Started
     </button>
   );
 }
 
-export default button1;
+export default Button1;
