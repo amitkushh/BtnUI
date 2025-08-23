@@ -2,12 +2,14 @@
 import Button from "./Button";
 import GithubIcon from "@/icons/GithubIcon";
 import XIcon from "@/icons/XIcon";
+import Image from "next/image";
 
 function Navbar() {
   return (
     <header>
       <div className="flex justify-between items-center bg-[#f6f6f6] mt-4 py-5 px-8 rounded-full">
-        <div>
+        <div className="flex justify-center items-center gap-2">
+          <Image src="./logo.svg" alt="btnui" width={30} height={30} />
           <span className="text-xl font-semibold">BtnUi</span>
         </div>
         <div className="flex justify-center items-center gap-3">
