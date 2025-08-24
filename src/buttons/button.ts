@@ -4,7 +4,7 @@ import Button3 from "./button3";
 import Button4 from "./button4";
 import Button5 from "./button5";
 import Button6 from "./button6";
-import Button7 from "./button6";
+import Button7 from "./button7";
 import Button8 from "./button8";
 import Button9 from "./button9";
 import Button10 from "./button10";
