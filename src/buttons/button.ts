@@ -15,6 +15,12 @@ import Button14 from "./button14";
 import Button15 from "./button15";
 import Button16 from "./button16";
 import Button17 from "./button17";
+import Button18 from "./button18";
+import Button19 from "./button19";
+import Button20 from "./button20";
+import Button21 from "./button21";
+import Button22 from "./button22";
+import Button23 from "./button23";
 
 export const Btn = {
   Button1,
@@ -34,6 +40,12 @@ export const Btn = {
   Button15,
   Button16,
   Button17,
+  Button18,
+  Button19,
+  Button20,
+  Button21,
+  Button22,
+  Button23,
 };
 
 //Copy Button Code Here
@@ -127,5 +139,35 @@ export const buttonCode: Record<string, string> = {
       <span className="relative z-10 text-white transition-colors duration-800">
         Login
       </span>
+    </button>`,
+  Button18: `<button className="relative px-8 py-3 overflow-hidden font-semibold bg-black group border-2 border-black rounded-xl cursor-pointer text-white">
+      <span className="absolute inset-0 w-full h-full bg-white transform scale-x-0 origin-right rounded-tl-full rounded-bl-full group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-800 ease-in-out z-0"></span>
+      <span className="absolute inset-0 w-full h-full bg-black transform scale-x-0 origin-right rounded-tr-full group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-800 ease-in-out z-0"></span>
+      <span className="relative z-10 text-white transition-colors duration-800">
+        Sign Up
+      </span>
+    </button>`,
+  Button19: `<button className="relative px-6 py-3 text-black font-semibold border-2 border-black overflow-hidden group rounded-xl cursor-pointer">
+      <span className="absolute inset-0 w-full h-full transform scale-x-0 bg-black origin-left rounded-tr-full rounded-br-full group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-800 ease-in-out z-0"></span>
+      <span className="absolute inset-0 h-full w-full bg-black transform scale-x-0 origin-right rounded-tl-full group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-800 ease-in-out z-0"></span>
+      <span className="relative z-10 group-hover:text-white group-focus:text-white transition-colors duration-800">
+        Hover me
+      </span>
+    </button>`,
+  Button20: `<button className="relative px-6 py-3 text-white font-semibold border-2 border-black overflow-hidden group rounded-xl cursor-pointer bg-black">
+      <span className="absolute inset-0 w-full h-full transform scale-x-0 bg-white origin-left rounded-tr-full rounded-br-full group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-800 ease-in-out z-0"></span>
+      <span className="absolute inset-0 h-full w-full bg-white transform scale-x-0 origin-right rounded-tl-full group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-800 ease-in-out z-0"></span>
+      <span className="relative z-10 group-hover:text-black group-focus:text-black transition-colors duration-800">
+        Hover me
+      </span>
+    </button>`,
+  Button21: `<button className="border px-6 py-2 rounded-sm text-black font-semibold cursor-pointer bg-white hover:shadow-xl focus:shadow-xl transition-all duration-300 ease-in-out">
+      Get a demo
+    </button>`,
+  Button22: `<button className="rounded-2xl font-semibold py-3 px-6 cursor-pointer bg-[#7370ff] text-white hover:bg-[#8f97fa] focus:bg-[#8f97fa] transition-shadow duration-300 ease-in-out hover:shadow-xl/30 hover:shadow-[#8f97fa] focus:shadow-xl/30 focus:shadow-[#8f97fa]">
+      Sign up
+    </button>`,
+  Button23: `<button className="py-3 px-6 rounded-full font-semibold cursor-pointer text-white border border-black bg-black hover:bg-white focus:bg-white hover:text-black focus:text-black transition-colors duration-300 ease-in-out">
+      Hover me
     </button>`,
 };
