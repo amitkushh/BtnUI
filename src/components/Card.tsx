@@ -1,15 +1,14 @@
 "use client";
 import CopyIcon from "@/icons/CopyIcon";
-import Button from "./Button";
 import { Btn } from "@/buttons/button";
 import CheckIcon from "@/icons/CheckIcon";
-import { toast } from "sonner";
-import { useState } from "react";
+import { useCopy } from "@/hooks/useCopy";
+import { buttonCode } from "@/buttons/button";
 
 function Card() {
-  const [isChecked, setIsChecked] = useState(false);
+  const { copy, isCopied } = useCopy();
 
-  const buttons = Object.entries(Btn);
+  const buttons = Object.entries(Btn) as [keyof typeof Btn, React.FC][];
 
   return (
     <div className="flex flex-col items-center bg-[#f6f6f6] mt-4 py-15 rounded-2xl">
@@ -24,8 +23,20 @@ function Card() {
             key={name}
           >
             <div className="pl-40">
-              <Button varient="tertiary" text="" icon={<CopyIcon />}></Button>
+              {isCopied(name) ? (
+                <button className="rounded-full flex justify-center items-center text-sm bg-white hover:bg-black/5 focus:bg-black/5 p-2 text-black cursor-pointer">
+                  <CheckIcon />
+                </button>
+              ) : (
+                <button
+                  onClick={() => copy(buttonCode[name], name)}
+                  className="rounded-full flex justify-center items-center text-sm bg-white hover:bg-black/5 focus:bg-black/5 p-2 text-black cursor-pointer"
+                >
+                  <CopyIcon />
+                </button>
+              )}
             </div>
+            {/* Button Preview */}
             <div>
               <ButtonComp />
             </div>
